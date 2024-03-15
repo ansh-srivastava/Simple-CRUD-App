@@ -24,3 +24,12 @@ mongoose.connect("mongodb+srv://anshsrivastava0987:Zc1lwQ1GJRupsCv4@cluster0.txs
 .catch(()=>{
     console.log("Connection Failed!");
 });
+
+
+// to be removed
+.then(()=>{
+    console.log("Connected to database!");
+    app.listen(3000,()=>{
+        console.log('Server is running on port 3000');
+    });
+})
